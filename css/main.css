@@ -3,28 +3,62 @@
 
 .innercontainer
 {
-	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
 }
 
 body
 {
     color: #444444;
-	background-color: #e2e2e2;
+    background-color: #e2e2e2;
     padding: 2em;
-	font: 100%/1.4 'Roboto', arial, helvetica, helve, sans-serif;
+    font: 100%/1.4 'Roboto Condensed', arial, helvetica, helve, sans-serif;
+}
+.head1
+{
+
+    font-size: 18px;
 }
 
-.avatartext
+.head0
 {
-	position: absolute;
-	left: 170px;
-	color: white;
-	bottom: 85px;
+	font-size: 20px;
 }
+
+a.head0{
+	color: #444444;
+	padding-left: 5px;
+}
+.avatartext
+{position: absolute;left: 175px;color: white;bottom: 25px;/* text-shadow: 1px 1px 3px rgba(0, 0, 0, 1.69); */}
+
+.vlight
+{
+	/* font-size: 14px; */
+	color: #aaa;
+	margin-right: 5px;
+}
+
+.avatartext > .cv
+{
+	color: #f1fff1;
+}
+
+.avatartext > .name
+{
+	font-family: 'Roboto Slab';
+	font-size: 27px;
+	color: #ffffff;
+	position: relative;
+	/* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.69); */
+}
+
 .avatar
 {
 	position: absolute;
 	width: 120px;
+	border: 1px solid lightgray;
 	bottom: 30px;
 	left: 30px;
 	height: 120px;
@@ -40,8 +74,9 @@ body
 .background
 {
 	position: relative;
-	height: 420px;
+	height: 342px;
 	background: url('../img/background.png');
+	background-size: 100%;
 }
 
 .leaf
@@ -78,3 +113,173 @@ h1 {
 		.header {
 			padding: 1em 0;
 		}
+
+
+
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+#timeline {
+  list-style: none;
+  margin: 20px 0 30px 1px;
+  padding-left: 30px;
+  border-left: 8px solid #eee;
+}
+#timeline li {
+  margin: 20px 0;
+  position: relative;
+}
+#timeline p {
+  margin: 0 0 15px;
+  /* color: #666; */
+  /* font-size: 16px; */
+}
+
+.date {
+  /* margin-top: -10px; */
+  top: 0%;
+  left: 0px;
+  font-size: 15px;
+  /* line-height: 20px; */
+  position: absolute;
+}
+
+.circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border: 5px solid #eee;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.content {
+  max-height: 20px;
+  padding: 50px 0px 0;
+  border-color: transparent;
+  /* border-width: 2px; */
+  /* border-style: solid; */
+  /* border-radius: 0.5em; */
+  position: relative;
+}
+.content:before, .content:after {
+  /* content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%; */
+}
+.content:before {
+  /* border-right-color: inherit; */
+  /* border-width: 20px; */
+  /* top: 50%; */
+  /* margin-top: -20px; */
+}
+.content:after {
+  border-right-color: #48b379;
+  border-width: 17px;
+  top: 50%;
+  margin-top: -17px;
+}
+.content p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
+label {
+  font-weight: 700;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 20px;
+  transition: transform 0.2s linear;
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked + .relative label {
+  cursor: auto;
+  /* transform: translateX(42px); */
+}
+.radio:checked + .relative .circle {
+  background: #aaa;
+}
+.radio:checked ~ .content {
+  max-height: 180px;
+  /* border-color: #eee9dc; */
+  /* margin-right: 20px; */
+  /* transform: translateX(20px); */
+  transition: max-height 0.1s linear, border-color 0.1s linear, transform 0.1s linear;
+}
+.radio:checked ~ .content p {
+  max-height: 200px;
+  color: #444;
+  transition: color 0.1s linear 0.2s;
+}
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+  #timeline {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  #timeline li {
+    margin: 50px 0;
+  }
+
+  label {
+    width: 85%;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    transform: translateX(18px);
+  }
+
+  .content {
+    padding-top: 45px;
+    border-color: #eee9dc;
+  }
+  .content:before, .content:after {
+    border: solid transparent;
+    bottom: 100%;
+  }
+  .content:before {
+    border-bottom-color: inherit;
+    border-width: 17px;
+    top: -16px;
+    left: 50px;
+    margin-left: -17px;
+  }
+  .content:after {
+    border-bottom-color: #48b379;
+    border-width: 20px;
+    top: -20px;
+    left: 50px;
+    margin-left: -20px;
+  }
+  .content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .circle, .date {
+    display: none;
+  }
+}
