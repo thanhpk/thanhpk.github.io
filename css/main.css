@@ -1,5 +1,5 @@
 .outtercontainer
-{background-color: white;-webkit-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);-moz-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);width: 960px;margin: auto;}
+{background-color: white;-webkit-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);-moz-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);max-width: 960px;margin: auto;}
 
 .innercontainer
 {
@@ -76,7 +76,8 @@ a.head0{
 	position: relative;
 	height: 342px;
 	background: url('../img/background.png');
-	background-size: 100%;
+	background-size: 960px 100%;
+	/* background-position-x: 0px; */
 }
 
 .leaf
@@ -104,11 +105,13 @@ a.head0{
 h1 {
 			font-size: 2.2em;
 			padding: 0 0 .5em 0;
-		}
+		
+}
 
-		h2 {
-			font-size: 1.5em;
-		}
+h2 {
+  margin-top: 20px;
+	font-size: 2em;
+}
 
 		.header {
 			padding: 1em 0;
