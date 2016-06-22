@@ -3,10 +3,11 @@
 
 .innercontainer
 {
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 10px;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1%;
 }
+
 
 body
 {
@@ -18,15 +19,15 @@ body
 .head1
 {
 
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 .head0
 {
-	font-size: 20px;
+	font-size: 1.5em;
 }
 
-a.head0{
+a{
 	color: #444444;
 	padding-left: 5px;
 }
@@ -140,7 +141,7 @@ h2 {
 
 .date {
   /* margin-top: -10px; */
-  top: 0%;
+  top: 0;
   left: 0px;
   font-size: 15px;
   /* line-height: 20px; */
@@ -148,8 +149,8 @@ h2 {
 }
 
 .circle {
-  margin-top: -10px;
-  top: 50%;
+  /* margin-top: 0px; */
+  /* top: 9px; */
   left: -44px;
   width: 10px;
   height: 10px;
@@ -161,8 +162,9 @@ h2 {
 }
 
 .content {
-  max-height: 20px;
-  padding: 50px 0px 0;
+  /* max-height: 20px; */
+  /* margin-top: 40px; */
+  padding: 40px 0px 0;
   border-color: transparent;
   /* border-width: 2px; */
   /* border-style: solid; */
@@ -191,8 +193,6 @@ h2 {
   margin-top: -17px;
 }
 .content p {
-  max-height: 0;
-  color: transparent;
   text-align: justify;
   word-break: break-word;
   hyphens: auto;
@@ -212,19 +212,15 @@ label {
   display: none;
 }
 
-.radio:checked + .relative label {
-  cursor: auto;
-  /* transform: translateX(42px); */
-}
-.radio:checked + .relative .circle {
-  background: #aaa;
-}
 .radio:checked ~ .content {
-  max-height: 180px;
-  /* border-color: #eee9dc; */
-  /* margin-right: 20px; */
-  /* transform: translateX(20px); */
-  transition: max-height 0.1s linear, border-color 0.1s linear, transform 0.1s linear;
+  
+/* border-color: #eee9dc; */
+  
+/* margin-right: 20px; */
+  
+/* transform: translateX(20px); */
+  
+/* transition: max-height 0.1s linear, border-color 0.1s linear, transform 0.1s linear; */
 }
 .radio:checked ~ .content p {
   max-height: 200px;
@@ -258,8 +254,10 @@ label {
   .content {
     padding-top: 45px;
     border-color: #eee9dc;
+    max-height: 180px;
   }
   .content:before, .content:after {
+
     border: solid transparent;
     bottom: 100%;
   }
@@ -285,4 +283,18 @@ label {
   .circle, .date {
     display: none;
   }
+}
+
+@media only screen and (max-width: 900px) {
+body
+{
+  padding: 10px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+body
+{
+  padding: 0;
+}
 }
