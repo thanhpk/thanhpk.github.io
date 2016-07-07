@@ -18,8 +18,8 @@ body
 }
 .head1
 {
-font-size: 1em;
-/* margin-top: 10px; */
+font-size: 1em;
+/* margin-top: 10px; */
 }
 
 .head0
@@ -291,4 +291,29 @@ body
   /* top: 0; */
   transform-origin: bottom center;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.point
+{
+  font-size: 14px;
+  font-weight: bolder;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: gray;
+  padding-bottom: 3px;
+}
+
+.text-muted
+{
+  color: #bdbdbd;
+}
+
+.mt20
+{
+  margin-top: 20px;
+}
+
+.repimg
+{
+  width: 70px;
 }
