@@ -742,7 +742,7 @@
 	.link--takiri { font-size: 3.5em; }
 	.link--kukuri { font-size: 3.5em; }
 	.link--nukun { font-size: 3.5em; }
-	.link--kumya { font-size: 3em; }
+	.link--kumya {/* font-size: 3em; */}
 	.link--manko { font-size: 3.5em; }
 	.link--urpi { font-size: 5em; }
 	.link--mallki { font-size: 3.5em; }
