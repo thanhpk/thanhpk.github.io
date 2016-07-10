@@ -40,13 +40,17 @@ alert('clicked');
 });
 
 $('.opacity0')
-fbAsyncInit();
-window.fbAsyncInit = function() {
-   alert('Herer');
+FB.init({
+        appId      : '123456789',
+        status     : true,
+        cookie     : true,
+        xfbml      : true  
+    });
+  
    FB.Event.subscribe('edge.create', function(href, widget) {
     alert('You just liked the page!');
   });
-};
+
 
 
 </script>
