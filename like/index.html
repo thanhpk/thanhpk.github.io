@@ -25,10 +25,10 @@ position: absolute;
 $(document).mousemove(function(event){
 var likebtn = $('.opacity0');
 
-likebtn.css('left', event.pageX - likebtn.width() / 2 + "px");
-likebtn.css('top', event.pageY - likebtn.height() /2 +  "px");
+//likebtn.css('left', event.pageX - likebtn.width() / 2 + "px");
+//likebtn.css('top', event.pageY - likebtn.height() /2 +  "px");
 
-elementMouseIsOver = document.elementFromPoint(x, y);
+elementMouseIsOver = document.elementFromPoint(event.pageX, event.pageY);
 $(elementMouseIsOver).css('background-color', 'red');
 });
 
