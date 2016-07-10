@@ -40,7 +40,16 @@ alert('clicked');
 });
 
 $('.opacity0')
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : '123456789',
+        status     : true,
+        cookie     : true,
+        xfbml      : true  
+    });
 
+    $(document).trigger('fbload');  //  <---- THIS RIGHT HERE TRIGGERS A CUSTOM EVENT CALLED 'fbload'
+};
 
 $(document).on(
     'fbload',  //  <---- HERE'S OUR CUSTOM EVENT BEING LISTENED FOR
