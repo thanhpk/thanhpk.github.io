@@ -32,7 +32,7 @@ a{
 	padding-left: 5px;
 }
 .avatartext
-{position: absolute;color: white;bottom: 10px;left: 212px;/* text-shadow: 1px 1px 3px rgba(0, 0, 0, 1.69); */}
+{position: absolute;color: white;bottom: 80px;left: 225px;/* text-shadow: 1px 1px 3px rgba(0, 0, 0, 1.69); */}
 
 .vlight
 {
@@ -61,18 +61,21 @@ a{
 	position: absolute;
 	width: 120px;
 	/* border: 1px solid lightgray; */
-	bottom: -30px;
+	bottom: 10px;
 	left: 50px;
 	height: 120px;
+	background-origin: padding-box;
+	background-color: inherit;
 	border-radius: 90px;
 	border: 8px solid #3f3f3f;
 	background: url('../img/avatar.png');
-	background-size: 100% 100%;
+	background-size: 116% 116%;
 	background-repeat: no-repeat;
 	/* background-color: white; */
 	-webkit-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
 	-moz-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
 	box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
+	background-position: -15px 0px;
 }
 
 .background
@@ -139,7 +142,7 @@ h2 {
   position: relative;
 }
 #timeline p {
-  margin: 0 0 15px;
+  margin: 0 0 15px 10px;
   /* color: #666; */
   /* font-size: 16px; */
 }
@@ -269,11 +272,11 @@ body
   color: white;
   font-family: 'Roboto slab';
   font-size: 1em;
-  bottom: 36px;
-  height: 95px;
+  bottom: 77px;
+  height: 100px;
   position: absolute;
-  width: 14px;
-  left: 111px;
+  width: 15px;
+  left: 110px;
   /* top: 0; */
   transform-origin: bottom center;
   /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
@@ -324,4 +327,9 @@ body
 .centering
 {
   text-align: center;
+}
+
+#timeline  label  span
+{
+  margin-left: 10px;
 }
