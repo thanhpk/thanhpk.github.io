@@ -75,6 +75,51 @@ a{
   background-position: -15px 0px;
 }
 
+h3 {
+
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.skill.progress {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.progress {
+  position: relative;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  width: 200px;
+  height: 6px;
+}
+
+.progress > .bar {
+  border-radius: 5px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 6px;
+ 
+
+background: rgb(15,228,157);
+background: -moz-linear-gradient(left, rgba(15,228,157,1) 0%, rgba(33,196,167,1) 41%, rgba(54,164,172,1) 100%);
+background: -webkit-linear-gradient(left, rgba(15,228,157,1) 0%,rgba(33,196,167,1) 41%,rgba(54,164,172,1) 100%);
+background: linear-gradient(to right, rgba(15,228,157,1) 0%,rgba(33,196,167,1) 41%,rgba(54,164,172,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0fe49d', endColorstr='#36a4ac',GradientType=1 );
+
+}
+
 .desk {
 background-image: url(../img/desk.png);
     background-size: 45% auto;
