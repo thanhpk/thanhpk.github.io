@@ -85,12 +85,12 @@ background-image: url(../img/desk.png);
 }
 
 .education {
-background-image: url(../img/bookshelf.png);
-    background-size: 45% auto;
+  background-image: url(../img/bookshelf.png);
+    background-size: 30% auto;
     background-repeat: no-repeat;
     height: 400px;
     margin-top: 100px;
-    background-position-x: 100%;
+    background-position-x: 20%;
 }
 .avatar-border {
   position: absolute;
