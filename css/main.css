@@ -1,5 +1,19 @@
+@import url('./font.css');
+body {
+		font-family: 'Myriad Set Pro', sans-serif;
+		font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga', 'kern';
+    direction: ltr;
+    line-height: 1.1;
+    font-weight: 300;
+}
+
 .outtercontainer
-{background-color: white;-webkit-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);-moz-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);max-width: 960px;margin: auto;}
+{
+   ;max-width: 960px;margin: auto;}
 
 .innercontainer
 {
@@ -9,13 +23,6 @@
 }
 
 
-body
-{
-    color: #444444;
-    background-color: #e2e2e2;
-    padding: 2em;
-    font: 100%/1.4 'Roboto Condensed', arial, helvetica, helve, sans-serif;
-}
 .head1
 {
 font-size: 1em;
@@ -41,14 +48,12 @@ a{
 	margin-right: 5px;
 }
 
-.avatartext > .cv
-{
+.avatartext > .cv{
 	color: #f1fff1;
 }
 
 .avatartext > .name
 {
-	font-family: 'Roboto Slab';
 	font-size: 27px;
 	color: #ffffff;
 	position: relative;
@@ -56,37 +61,66 @@ a{
 	/* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.69); */
 }
 
-.avatar
-{
-	position: absolute;
-	width: 120px;
-	/* border: 1px solid lightgray; */
-	bottom: 10px;
-	left: 50px;
-	height: 120px;
-	background-origin: padding-box;
-	background-color: inherit;
-	border-radius: 90px;
-	border: 8px solid #ffffff;
-	background: url('../img/avatar.png');
-	background-size: 116% 116%;
-	background-repeat: no-repeat;
-	/* background-color: white; */
-	-webkit-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
-	-moz-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
-	box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
-	background-position: -15px 0px;
+.avatar{
+  width: 120px;
+  /* border: 1px solid lightgray; */
+  height: 120px;
+  background-origin: padding-box;
+  background-color: inherit;
+  border-radius: 90px;
+  background: url('../img/avatar.png');
+  background-size: 116% 116%;
+  background-repeat: no-repeat;
+
+  background-position: -15px 0px;
+}
+
+.desk {
+background-image: url(../img/desk.png);
+    background-size: 45% auto;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 100px;
+    background-position-x: 100%;
+}
+
+.education {
+background-image: url(../img/bookshelf.png);
+    background-size: 45% auto;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 100px;
+    background-position-x: 100%;
+}
+.avatar-border {
+  position: absolute;
+  width: 120px;
+  /* border: 1px solid lightgray; */
+  bottom: 10px;
+  left: 50px;
+  height: 120px;
+ 
+  border-radius: 90px;
+  border: 8px solid red;
+
+  /* background-color: white; */
+  -webkit-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
+  -moz-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
+  box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
+  background-position: -15px 0px;
+
 }
 
 .background
 {
-	/* border-bottom: 8px solid #3f3f3f; */
-	/* padding-bottom: 37px; */
-	position: relative;
-	height: 342px;
-	background: url('../img/background.png');
-	background-size: 960px 100%;
-	/* background-position-x: 0px; */
+	 position: relative;
+    height: 342px;
+    background-size: cover;
+    background: url(../img/background.png);
+    /* background-size: cover; */
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position-x: 0px; */
 }
 
 .leaf
@@ -119,7 +153,9 @@ h1 {
 
 h2 {
   /* margin-top: 2%; */
-  font-size: 2em;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 20px;
 }
 
 		.header {
@@ -271,7 +307,6 @@ body
 .myname span
 {
   color: white;
-  font-family: 'Roboto slab';
   font-size: 1em;
   bottom: 77px;
   height: 100px;
@@ -286,7 +321,6 @@ body
 .mytitle span
 {
   color: white;
-  font-family: monospace;
   bottom: 2px;
   font-size: 1.5em;
   height: 100px;
