@@ -71,7 +71,6 @@ a{
   background: url('../img/avatar.png');
   background-size: 116% 116%;
   background-repeat: no-repeat;
-
   background-position: -15px 0px;
 }
 
@@ -145,6 +144,27 @@ padding-top: 16px;
   border-radius: 15px;
   width: 100%;
   height: auto;
+}
+
+.line-1 {
+  border-right: 2px solid rgba(0,0,0,1);
+   
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 600px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0,0,0,.75);}
+  to{border-right-color: transparent;}
 }
 
 h4 {
@@ -223,7 +243,6 @@ background-image: url(../img/desk.png);
     background-position-x: 20%;
 }
 .avatar-border {
-  position: absolute;
   width: 120px;
   /* border: 1px solid lightgray; */
   bottom: 10px;
@@ -231,7 +250,7 @@ background-image: url(../img/desk.png);
   height: 120px;
  
   border-radius: 90px;
-  border: 8px solid red;
+  border: 8px solid rgba(255,255,255,0.5);
 
   /* background-color: white; */
   -webkit-box-shadow: 14px 15px 60px -14px rgba(0,0,0,0.64);
@@ -243,14 +262,15 @@ background-image: url(../img/desk.png);
 
 .background
 {
+  margin-top: 200px;
 	 position: relative;
-    height: 342px;
+    height: 10px;
     background-size: cover;
     background: url(../img/background.png);
     /* background-size: cover; */
     background-size: cover;
     background-attachment: fixed;
-    /* background-position-x: 0px; */
+    margin-bottom: 100px;
 }
 
 .leaf
@@ -277,7 +297,8 @@ background-image: url(../img/desk.png);
 
 h1 {
 			font-size: 2.2em;
-			padding: 0 0 .5em 0;
+			padding: 0 0 0 0;
+      font-weight: 300;
 		
 }
 
