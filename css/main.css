@@ -229,11 +229,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0fe49d', end
 
 .desk {
 background-image: url(../img/desk.png);
-    background-size: 45% auto;
+    background-size: 50% auto;
     background-repeat: no-repeat;
     height: 400px;
     margin-top: 100px;
-    background-position-x: 100%;
+    background-position-x: 110%;
 }
 
 .education {
