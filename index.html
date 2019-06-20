@@ -45,15 +45,9 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
-<!-- Start of widget script --><script type="text/javascript">function loadJsAsync(t,e){var n=document.createElement("script");n.type="text/javascript",n.src=t,n.addEventListener("load",function(t){e(null,t)},!1);var a=document.getElementsByTagName("head")[0];a.appendChild(n)}window.addEventListener("DOMContentLoaded",function(){loadJsAsync("https://webchat.caresoft.vn:8090/js/CsChat.js?v=2.0",function(){var t={domain:"thanhpk"};embedCsChat(t)})},!1);</script><!-- End of widget script -->
 
 </head>
 <body>
-	<script type="text/javascript">
-(function (e, t) { if (!t.__SV) { window.calq = t; var n = e.createElement("script"); n.type = "text/javascript"; n.src = "http" + ("https:" === e.location.protocol ? "s" : "") + '://api.calq.io/lib/js/core-1.0.js'; n.async = !0; var r = e.getElementsByTagName("script")[0]; r.parentNode.insertBefore(n, r); t.init = function (e, o) { if (t.writeKey) return; t.writeKey = e; t._initOptions = o; t._execQueue = []; var m = "action.track action.trackSale action.trackHTMLLink action.trackPageView action.setGlobalProperty user.profile user.identify user.clear".split(" "); for (var n = 0; n < m.length; n++) { var f = function () { var r = m[n]; var s = function () { t._execQueue.push({ m: r, args: arguments }) }; var i = r.split("."); if (i.length == 2) { if (!t[i[0]]) { t[i[0]] = [] } t[i[0]][i[1]] = s } else { t[r] = s } }(); } }; t.__SV = 1 } })(document, window.calq || []);
-calq.init("f774c42c7d4aa0cb89aaa5c4b145c587");
-calq.action.trackPageView();   // [Optional] Leave if you want to automatically create a "Page View" action
-</script>
 
 				<div class="desk">
 					<div class="outtercontainer ">
@@ -216,77 +210,6 @@ calq.action.trackPageView();   // [Optional] Leave if you want to automatically 
 		</div>
 
 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88938911-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-	
-	<!--Start of Zendesk Chat Script-->
-<!-- <script type="text/javascript">
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="https://v2.zopim.com/?4TSC7F6zGjSPlZoqfBPS8NJmAK6ZF3Wx";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>
-<!--End of Zendesk Chat Script--> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!--Start of HappyFox Live Chat Script-->
-<script>
- window.HFCHAT_CONFIG = {
-     EMBED_TOKEN: "379c9e80-2572-11e7-af79-93e052083a96",
-     ACCESS_TOKEN: "34ac9498dbd54183b779c0577f8ca127",
-     HOST_URL: "https://happyfoxchat.com",
-     ASSETS_URL: "https://d1l7z5ofrj6ab8.cloudfront.net/visitor"
- };
-
-(function() {
-  var scriptTag = document.createElement('script');
-  scriptTag.type = 'text/javascript';
-  scriptTag.async = true;
-  scriptTag.src = window.HFCHAT_CONFIG.ASSETS_URL + '/js/widget-loader.js';
-
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(scriptTag, s);
-})();
-</script>
-<!--End of HappyFox Live Chat Script-->
-	
-	<!-- Start of Async Drift Code -->
-<script>
-"use strict";
-
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('zhnc7dxnpmyi');
-</script>
-<!-- End of Async Drift Code -->
 </body>
 </html>
 
