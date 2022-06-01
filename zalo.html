@@ -5,5 +5,47 @@
 <div class="zalo-chat-widget" data-oaid="935022139843821727" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420"></div>
 
 <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+  
+  
+  
+  
+  
+  
+  <script type="text/javascript">
+      /* Load remote Batch SDK JavaScript code */
+(function(b,a,t,c,h,e,r){h='batchSDK';b[h]=b[h]||function() {
+    (b[h].q=b[h].q||[]).push(arguments)};e=a.createElement(t),r=a.getElementsByTagName(t)[0];
+    e.async=1;e.src=c;r.parentNode.insertBefore(e,r);})(window,document,'script','https://via.batch.com/v3/bootstrap.min.js');
+
+/* Initiate Batch SDK opt-in UI configuration (native prompt) */
+var batchSDKUIConfig = {
+    native: {}
+};
+
+/* Use a specific configuration for Firefox and Safari browsers (custom prompt) */
+if (navigator.userAgent.indexOf("Firefox") !== -1 || (navigator.userAgent.indexOf("Safari") !== -1 &&
+navigator.userAgent.indexOf("Chrome") === -1)) {
+    batchSDKUIConfig = {
+        alert: {
+          icon: 'https://secure.url.to.your.icon.jpg'
+        }
+    }
+}
+
+/* Finalize the Batch SDK setup */
+batchSDK('setup', {
+    apiKey: '04C5EB11ABC34670BFEE65C17BAD16D0',
+    subdomain: 'github6',
+    authKey: '2.IChFhgDoi2bIL32A5laOyKcz9jsx8lEipHhlwxL7XR0=',
+    dev: true, // remove this for prod
+    vapidPublicKey: 'BGMbbnGcaQnwNip410OOateJ5sG4akFq/0xFTWLUygET8fty184MXYvJ6dgclpzMq9NJBmAbmLLCZ04645MxHTc=',
+    ui: batchSDKUIConfig,
+    // defaultIcon: 'https://path.to/my/logo-192/png', // for Chrome desktop
+    // smallIcon: 'https://path.to/my/icon-96.png', // for Chrome Android
+    
+});
+</script>
+      
+  
 </body>
 </html>
