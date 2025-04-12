@@ -1,0 +1,68 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Footer from '../components/Footer.astro'
+import {SITE_TITLE, SITE_DESCRIPTION} from '../consts'
+import {getCollection} from 'astro:content'
+import FormattedDate from '../components/FormattedDate.astro'
+import {Image} from 'astro:assets'
+import iLogo from '../../public/logo.png' // Image is 1600x900
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.blog-post {
+				margin-top: 0.5em;
+			}
+
+			.tagline {
+				color: rgb(var(--gray));
+			}
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+		</style>
+	</head>
+	<body>
+		<main class='container'>
+			<header class='row'>
+				<div class='col-12-sm'>
+					<div>
+						<div>Thanh Kieu's Blog</div>
+						<div></div>
+					</div>
+
+					<div style={{display: 'flex', alignItems: 'center', marginTop: '0.5em'}}>
+						<Image src={iLogo} alt='logo' width='24' height='24' />
+						&nbsp;
+						<small class='tagline'>Những thứ tôi thấy thú vị</small>
+					</div>
+				</div>
+			</header>
+			<div class='row'></div>
+			<br />
+			<section>
+				{
+					posts.map((post) => (
+						<div class='blog-post row'>
+							<div class='col-3'>
+								<small class='date'>
+									<FormattedDate date={post.data.pubDate} />
+								</small>
+							</div>
+							<div class='col-9'>
+								<a href={`/${post.slug}/`}>{post.data.title}</a>
+							</div>
+						</div>
+					))
+				}
+			</section>
+			<Footer />
+		</main>
+	</body>
+</html>
