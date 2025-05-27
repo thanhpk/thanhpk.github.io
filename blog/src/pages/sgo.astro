@@ -1,0 +1,19 @@
+---
+import {SITE_TITLE, SITE_DESCRIPTION} from '../consts'
+import BaseHead from '../components/BaseHead.astro'
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<iframe
+			allowfullscreen='allowfullscreen'
+			scrolling='no'
+			class='fp-iframe'
+			src='https://heyzine.com/flip-book/75daa9c808.html'
+			style='border: 1px solid lightgray; width: 100%; height: 400px;'></iframe>
+	</body>
+</html>
